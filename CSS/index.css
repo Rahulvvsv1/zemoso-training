@@ -1,0 +1,72 @@
+body {
+    background-color: lightblue;
+    background-image: url("d.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    color:azure;
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+/*  selecting multiple elements */
+
+h1, p {
+    background-color: rgb(13, 21, 21);
+}
+
+p.dotted {
+    border-style: dotted;
+    border-width: 5px;
+    text-align: center;
+}
+p.dashed {
+    border-style: dashed;
+    text-align: left;
+}
+p.solid {
+    border-style: solid;
+    text-align: right;
+}
+p.double {
+    border-style: double;
+    text-align: justify;
+}
+
+p.different {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+
+  p.different{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+  p.dashed{
+    
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      
+  }
+
+div.divs{
+    
+        height: 200px;
+        width: 50%;
+        background-color: powderblue;
+      
+}
