@@ -1,0 +1,66 @@
+body {
+    background: rgb(149, 185, 201);
+    font-family: 'Roboto', sans-serif;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #8fcfeb;
+    font-weight: bold;
+}
+
+.nice{
+    display: flex;
+    flex-direction: row;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    flex-direction: column;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    display: flex;
+    flex-direction:row ;
+    padding: 0 4px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 250px;
+    width: 100%;
+  }
