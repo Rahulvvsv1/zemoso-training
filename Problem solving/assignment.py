@@ -50,11 +50,6 @@ def add_to_bob():
 
 
 while(len(input_array)!=0):
-    #alice turn
-    #alice always needs to choose elements so that the sum is always even
-    # even + even = even 
-    # odd  + odd = even
-    # alice needs to follow the above numbers and add if specific even or odd is not found the add the first element  
     if(alice_score%2 == 0): 
         find_even()
     else:
@@ -63,13 +58,11 @@ while(len(input_array)!=0):
     add_to_alice()  
 
 
-    #added this line to see if the list is empty or not after first removal
+    
     if(len(input_array)==0):
         break
 
-    #bob turn
-    #if alice score is even bob needs to choose even to reduce alice chances to get even numbers
-    #if specific type of even or odd is not found according to necessary just add the firs number in the array
+
     if (alice_score%2 == 0):
         find_even()
     else :
