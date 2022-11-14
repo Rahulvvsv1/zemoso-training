@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local</h1>
+    <p id ="local" >Count</p>
+    <input type="button" name="local" id="" value="add to local" onclick="local_click()">
+    <h1>Session</h1>
+    <p id ="session">Count</p>
+    <input type="button" name ="session" value ="add to session" onclick="session_click()">
+</body>
+<script>
+let local = document.getElementById("local")
+let session = document.getElementById("session")
+local.innerHTML = localStorage.clickcount;  
+session.innerHTML = sessionStorage.clickcount;  
+
+const local_click = () =>{    
+    if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    } else {
+        localStorage.clickcount = 1;
+    }
+    local.innerHTML = localStorage.clickcount;  
+
+}
+const session_click = () =>{    
+    if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+    } else {
+        sessionStorage.clickcount = 1;
+    }
+    session.innerHTML = sessionStorage.clickcount;  
+
+}
+
+</script>
+</html>
