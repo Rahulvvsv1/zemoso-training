@@ -12,48 +12,75 @@ else alice picks up an odd number
 8.If alice sum is even then alice wins or bob wins
 
 '''
+  
+input_array = [1,2,10,3,15,10]
+alice_score = 0 
+bob_score=0
+found =0
 
-inputs = [1,2,10,3,15]
-Alice_score = 0
-while(len(inputs)!=0):
-    for i in inputs:
-        if (i%2 == 0 and Alice_score%2 == 0):
-            Alice_score += i
-            inputs.remove(i)
-            print("Alice turn ",i)
-
+def find_even():
+    global found
+    for i in range(len(input_array)):
+        if (input_array[i])%2 ==0:
+            found = i
             break
-        elif(i%2 != 0 and Alice_score%2 != 0):
-            Alice_score += i
-            inputs.remove(i)
-            print("Alice turn ",i)
-
+        else :
+            found = 0
+def find_odd():
+    global found
+    for i in range(len(input_array)):
+        if (input_array[i])%2 != 0:
+            found = i
             break
-        else:
-            Alice_score += i
-            inputs.remove(i)
-            print("Alice turn ",i)
+        else :
+            found = 0
 
-            break
-        
-    for i in inputs:
-        if(Alice_score%2 == 0):
-            if(i%2==0):
-                inputs.remove(i)
-                print("Bob turn ",i)
+def add_to_alice():
+    global alice_score
+    alice_score += input_array[found]
+    input_array.remove(input_array[found])
 
-                break
-        else:
-            if(i%2 != 0 ):
-                inputs.remove(i)
-                print("Bob turn ",i)
-
-                break
-              
-    print("Something going on",inputs,Alice_score)  
+def add_to_bob():
     
-if(Alice_score%2  == 0):
+    #print("IN BOB",found,input_array)
+    global bob_score
+    bob_score += input_array[found]
+    input_array.remove(input_array[found])
+
+
+
+while(len(input_array)!=0):
+    #alice turn
+    #alice always needs to choose elements so that the sum is always even
+    # even + even = even 
+    # odd  + odd = even
+    # alice needs to follow the above numbers and add if specific even or odd is not found the add the first element  
+    if(alice_score%2 == 0): 
+        find_even()
+    else:
+        find_odd()
+
+    add_to_alice()  
+
+
+    #added this line to see if the list is empty or not after first removal
+    if(len(input_array)==0):
+        break
+
+    #bob turn
+    #if alice score is even bob needs to choose even to reduce alice chances to get even numbers
+    #if specific type of even or odd is not found according to necessary just add the firs number in the array
+    if (alice_score%2 == 0):
+        find_even()
+    else :
+        find_odd()
+
+    add_to_bob()
+    print(alice_score,bob_score,input_array)
+
+
+print("alice score: ",alice_score,"\nbob_score",bob_score,"\n")
+if(alice_score%2  == 0):
     print("Alice wins")
 else:
     print("Bob wins")
-            
