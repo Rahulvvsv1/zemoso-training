@@ -1,7 +1,7 @@
 body {
     background-color: lightblue;
     background-image: url("d.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: right top;
     background-attachment: fixed;
   }
@@ -69,4 +69,11 @@ div.divs{
         width: 50%;
         background-color: powderblue;
       
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+  
 }
