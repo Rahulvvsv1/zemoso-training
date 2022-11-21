@@ -24,15 +24,15 @@ table_input.addEventListener("change",table_search )
 const menu_search = (e) => {
     let value = e.target.value
     for(let i of menu_items){
-        // console.log(i)
+      
         let menu_item_name = i.childNodes[0].innerHTML 
         if ( !menu_item_name.toLowerCase().includes(value.toLowerCase())){
             i.style.display = "none"
-            // console.log("workingggg")
+           
         } 
         else{
             i.style.display="flex";
-            // console.log("working");
+        
         }
     } 
     for(let j in menu2){
@@ -40,7 +40,7 @@ const menu_search = (e) => {
             console.log("i")
             for(let i of menu_items){
                 let menu_item_name = i.childNodes[0].innerHTML 
-                // console.log(menu2[j].includes(menu_item_name))
+                
                 if(menu2[j].includes(menu_item_name)){
                     i.style.display = "flex";
                 }
