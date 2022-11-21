@@ -57,7 +57,7 @@ const create_table_row = (e) => {
                 let del = document.createElement("span");
 
                 
-                // del.setAttribute("class","icofont-trash");
+                
                 span.setAttribute("class","buttonss");  
                 span1.setAttribute("class","buttonss");
                 
@@ -82,13 +82,12 @@ const create_table_row = (e) => {
                 
                 td1.innerHTML = count;
                 td2.innerHTML = name;
-                // td3.innerHTML = amount;
+               
                 count_inp.value = quantity;
                 
                 td3.appendChild(number);
                 td4.appendChild(count_inp);
-                // td4.appendChild(span);
-                // td4.appendChild(span1);
+
                 td5.appendChild(del);
 
                 row.appendChild(td1);
@@ -109,11 +108,10 @@ const create_table_row = (e) => {
 
             let total_amount = 0;
             for(let j in table_array[id-1]["items"]){
-                //console.log(j,table_array[id-1]["items"][j])
+       
                 total_amount += menu[j]*table_array[id-1]["items"][j]
             }
-            // console.log("tpata;",total_amount);
-            // table_array[id-1]["total"] = total_amount;
+
             amount_col.innerHTML = "Total";
             amount_col2.innerHTML = total_amount;
             amount_row.appendChild(amount_col);
