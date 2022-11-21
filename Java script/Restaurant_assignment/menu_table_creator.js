@@ -1,5 +1,5 @@
 const createTableElements =  () => {
-    // removeAllChildNodes(table_page);
+ 
     let count =1;
     for(let i of table_array){
 
@@ -43,7 +43,7 @@ const createTableElements =  () => {
                         table_array[id-1]["items"][data]  += 1;
                     }
                     for(let j in table_array[id-1]["items"]){
-                        //console.log(j,table_array[id-1]["items"][j])
+               
                         total_amount += menu[j]*table_array[id-1]["items"][j]
                     }
                     console.log("tpata;",total_amount);
