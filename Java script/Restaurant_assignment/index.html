@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">    -->
 </head>
 <body>
     <div class="page">
@@ -23,7 +24,10 @@
     </div>
     <div id ="table_detail" >
         <div class="detail">
-            <h1>Table  <span id ="table_detail_number"></span>| Order Details </h1>
+        <div>
+            <h1>Table  <span id ="table_detail_number"></span>| Order Details  <span id="close" style="position:absolute;float: right;right:5px;top:0px;text-decoration: none;font-size: 20px;font-weight: 100;">x</span> </h1>
+           
+        </div>
             <table id="tablee">
   
             </table>
@@ -31,8 +35,9 @@
         </div>
     </div>
 </body>
-<script src="index.js">
-
-
-</script>
+<script src="index.js"></script>
+<script src="modal.js"></script>
+<script src="menu_table_creator.js"></script>
+<script src="table_search.js"></script>
+<script src="modal_update.js"></script>
 </html>

@@ -5,7 +5,7 @@
 .page{
     display: flex;
     flex-direction: row ;
-    height: 745px;
+    height:1080px;
 }
 #tables{
     width:25%;
@@ -63,6 +63,25 @@ input{
     transform: translateX(-50%);
     width: 70%;
 }
+
+#close:hover{
+    cursor:pointer;
+}
+.inputs{
+    padding:5px;
+    margin:5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.delete{
+    background: "delete.png";
+    max-width: 20px;
+    width: 100%;
+}
 #table_detail{
     display: none;
     position: absolute;
@@ -110,4 +129,5 @@ table {
     padding: 1px;
     border: 1px solid;
     margin: 1px;
+    cursor: pointer;
   }
