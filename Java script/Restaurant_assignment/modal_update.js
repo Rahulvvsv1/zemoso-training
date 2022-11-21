@@ -23,7 +23,7 @@ function increment (e) {
             console.log(table_element["items"][food_item])
             let total_amount=0;
             for(let j in table_array[id-1]["items"]){
-                //console.log(j,table_array[id-1]["items"][j])
+               
                 total_amount += menu[j]*table_array[id-1]["items"][j]
             }
             
@@ -44,11 +44,10 @@ function increment (e) {
         let count  = this.parentNode.parentNode.childNodes[3];
         console.log(count)
         count.childNodes[0].innerHTML = table_element["items"][food_item];    
-        // amount_td.innerHTML = total_amount.toString(   );
-        // console.log(amount_td,total_amount)
+
         let total_amount=0;
         for(let j in table_array[id-1]["items"]){
-            //console.log(j,table_array[id-1]["items"][j])
+    
             total_amount += menu[j]*table_array[id-1]["items"][j]
         }
         
@@ -69,7 +68,7 @@ function deleter(){
     delete table_element["items"][food_item];
     let total_amount=0;
     for(let j in table_array[id-1]["items"]){
-        //console.log(j,table_array[id-1]["items"][j])
+     
         total_amount += menu[j]*table_array[id-1]["items"][j]
     }
     
