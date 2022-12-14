@@ -1,0 +1,23 @@
+.card{
+    box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 32px;
+gap: 12px;
+justify-content: space-around;
+position: absolute;
+width: 700px;
+height: 259px;
+left: 278px;
+top: 143px;
+
+/* background/elevation 1 */
+background: #201F24;
+
+/* border/low emp */
+border: 1px solid #28272B;
+border-radius: 12px;
+}
