@@ -1,0 +1,17 @@
+.lock{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+/* gap: 24px; */
+
+width: 204px;
+height: 168px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+}
