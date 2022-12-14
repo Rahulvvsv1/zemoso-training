@@ -1,0 +1,24 @@
+.Second,p{
+    /* width: 204px;
+height: 34px; */
+
+/* heading 2 */
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.005em;
+
+/* text/high emp */
+color: #ffffff;
+/* background: rgba(232, 231, 240, 1); */
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
