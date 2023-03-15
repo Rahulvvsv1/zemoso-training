@@ -18,9 +18,7 @@ public class Ping {
 
                 }
                 time2 = LocalTime.now();
-//                System.out.println("Is host reachable? " + reachable);
-//                System.out.println(time);
-//                System.out.println(time2);
+
               double time3 = ChronoUnit.MILLIS.between(time, time2) ;
                 times.add(time3);
                 System.out.println("time difference"+time3);
